@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titulo_principal</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+        <div>
+            <h1 id="titulo_principal">O senhor dos anéis - Um filme massa</h1>
+            
+            <h2 class="titulo_segundario">Uma das Trilogias mais famosas do cinema - Saga cinematografica</h2>
+
+            <nav>
+                <a href="index.html">home</a>
+                <a href="Sinopse.html">Sinopse</a>
+                <a href="imagemfilme.html">Imagem do filme</a>
+                <a href="Personagens.html">Personagens principais</a>
+                <a href="informacoes.html">Informacoes</a>
+                <a href="Curiosidades.html">Curiosidades</a>
+                <a href="ordem.html">Ordem cronologica</a>
+                <a href="Impacto.html">Impacto Cultural</a>
+                <a href="#conclusao">Conclusão</a>
+                <a href="contato.html">contato</a>
+            </nav>
+        </div>
+         
+        <h2 class="titulo_segundario">Entre em contato</h2>
+        <form action="processa.php" method="POST" autocomplete="off">
+            <label for="nomepessoa">Nome:</label>
+            <input type="text" name="nomepessoa" 
+            id="nomepessoa" minlength="3" maxlength="15" 
+            required placeholder="Informe seu nome"><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            required placeholder="E-mail"><br><br>
+
+            <label for="email">Ano de nascimento</label>
+            <input type="number" id="ano" name="ano" max="2026" 
+             min="1900" placeholder="Informe seu ano de nascimento"><br><br>
+
+             <label for="Telefone">Telefone</label>
+             <input type="tel" name="telefone" id="telefone"
+             placeholder="Informe seu telefone"><br><br>
+
+             <label for="Github">Informe seu Github</label>
+             <input type="url" name="Github" id="Github"
+             placeholder="Informe seu github"><br><br>
+
+             <label for="Senha">Informe sua senha</label>
+             <input type="password" id="Senha" name="Senha"><br><br>
+              
+             <label for="arquivo">Anexe um arquivo</label>
+             <input type="file" id="arquivo" name="arquivo"><br><br>
+
+             <label for="cor">Escolha uma cor</label>
+             <input type="color" id="cor" name="cor"><br><br>
+
+         <fieldset>
+            <legend>Campos de tempo</legend>
+                <label for="data">informe a data</label>
+                <input type="date" name="data" id="data"><br><br>
+
+                <label for="mes">informe o mes</label>
+                <input type="month" name="mes" id="mes"><br><br>
+                
+                <label for="semana">informe a semana</label>
+                <input type="week" name="semana" id="semana"><br><br>
+
+                <label for="hora">Informe a hora</label>
+                <input type="time" name="hora" id="hora"><br><br>
+                
+                <label for="datahora">Data e hora atual</label>
+                <input type="datetime-local" name="datahora" id="datahora"><br><br>
+         </fieldset>
+             
+            <label for="pesquisa">Pesquisa</label>
+            <input type="search" name="pesquisa" id="pesquisa"><br><br>
+            
+            <label for="descricao">Informe aqui o que voce gosta nos filmes</label><br>
+            <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
+
+            <fieldset>
+                 <legend>Qual seu filme favorito?</legend>
+                <label for="filme1"> <input type="radio" name="filme" id="filme1" value="filme1">Filme 1</label><br><br>
+                
+                <label for="filme2"> <input checked type="radio" name="filme" id="filme2" value="filme2">Filme 2</label><br><br>
+                
+                <label for="filme3"> <input type="radio" name="filme" id="filme3" value="filme1">Filme 3</label><br><br>
+            </fieldset>
+            
+            <select>
+                <option value="filme 1">Filme 1</option>
+                <option value="filme 1">Filme 2</option>
+                <option  selected value="filme 3">Filme 3</option>
+            </select>
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+
+            
+        </form>
+    
+</body>
+</html>
