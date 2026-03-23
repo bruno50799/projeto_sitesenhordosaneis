@@ -11,7 +11,6 @@
             <h1 id="titulo_principal">O senhor dos anéis - Um filme massa</h1>
             
             <h2 class="titulo_segundario">Uma das Trilogias mais famosas do cinema - Saga cinematografica</h2>
-
             <nav>
                 <a href="index.html">home</a>
                 <a href="Sinopse.html">Sinopse</a>
@@ -91,11 +90,53 @@
                 <label for="filme3"> <input type="radio" name="filme" id="filme3" value="filme1">Filme 3</label><br><br>
             </fieldset>
             
-            <select>
-                <option value="filme 1">Filme 1</option>
-                <option value="filme 1">Filme 2</option>
-                <option  selected value="filme 3">Filme 3</option>
-            </select>
+            <select id="lista_suspensa" name="lista">
+                <optgroup label="Teste de legenda no combobox"> 
+                    <option value="filme 1">Filme 1</option>
+                    <option value="filme 1">Filme 2</option>
+                    <option selected value="filme 3">Filme 3</option>
+                </optgroup>
+                <optgroup label="Teste de legenda no combobox 2"> 
+                    <option value="filme 1">Filme 1</option>
+                    <option value="filme 1">Filme 2</option>
+                    <option selected value="filme 3">Filme 3</option>
+                </optgroup>
+            </select><br><br>
+            
+                <fieldset>
+                    <legend>Desenvolvimento para internet</legend>
+                    <label"><input type="checkbox" name="php" value="php">PHP</label>
+                    <label"><input type="checkbox" name="html5" value="html5">HTML5</label>
+                    <label"><input type="checkbox" name="css" value="css">CSS</label>
+                    <label"><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+                </fieldset><br><br>
+                <label for="nivel">Escolha o nivel</label>
+                <input type="range" max="10" min="1" id="nivel" name="nivel">
+
+               <!--Datalist possiveis ganhadores da copa do mundo 26--> 
+                <input type="text" id="busca_datalist" list="paises">
+                <datalist id="paises">
+                    <option>Brasil</option>
+                    <option>França</option>
+                    <option>Argentina</option>
+                    <option>Alemanha</option>
+                    <option>Inglaterra</option>
+                    <option>Espanha</option>
+                </datalist><br><br>
+
+                <audio controls muted autoplay loop>
+                    <source src="audio/musica.mp3" type="audio/mp3">
+                    navegador não é compatível para executar aúdio
+                </audio><br><br>
+
+                <video>
+                  <source src="VIDEO/videoteste.mp4" type="video/mp4">
+                </video><br><br>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QBC0KZ7ZQro?si=uF9fav01X9aBCa1z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+
+        
 
             <button type="reset">Limpar</button>
             <button type="submit">Enviar</button>
