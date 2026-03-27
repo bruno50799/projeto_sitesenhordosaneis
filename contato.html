@@ -31,49 +31,102 @@
             <input type="text" name="nomepessoa" 
             id="nomepessoa" minlength="3" maxlength="15" 
             required placeholder="Informe seu nome"><br><br>
+    <form>
 
-            <label for="email">Corvo eletrônico (email)</label>
-            <input type="email" name="email" id="email"
-            required placeholder="E-mail"><br><br>
+        <label>Nome na Terra Média:</label>
 
-            <label for="email">Ano de nascimento</label>
-            <input type="number" id="ano" name="ano" max="2026" 
-             min="1900" placeholder="Informe seu ano de nascimento"><br><br>
+        <input type="text" placeholder="Ex: Aragorn"><br><br>
 
-             <fieldset>
-                 <legend>Qual a sua raça?</legend>
-                <label for="humano"> <input type="radio" name="humano" id="humano" value="humano">Humano</label>
-                <label for="elfo"> <input type="radio" name="elfo" id="elfo" value="elfo">Elfo</label>
-                <label for="anao"> <input type="radio" name="filme" id="anao" value="anao">Anão</label>
-                <label for="hobbit"> <input type="radio" name="hobbit" id="hobbit" value="hobbit">Hobbit </label>
-            </fieldset>
+        <label>Corvo eletrônico (Email):</label>
+        <input type="email"><br><br>
+        <label>Ano de nascimento:</label>
+        
+        <input type="number"><br><br>
 
-              
-           
-           <label for="Qual seu filme favortio">Qual seu Filme Favorito?</label>
-           <input type="text" id="busca_datalist" list="filmes">
-                <datalist id="Qual seu filme favorito">
-                    <option>O retorno do Rei</option>
-                    <option></option>
-                    <option></option>
-                </datalist><br><br>
-            
-                 <fieldset>
-                    <legend>Suas Habilidades</legend>
-                    <label"><input type="checkbox" name="Espada" value="Espada">Espada</label>
-                    <label"><input type="checkbox" name="arcoeflecha" value="arcoeflecha">Arco e Flecha</label>
-                    <label"><input type="checkbox" name="magia" value="magia">Magia</label>
-                    <label"><input type="checkbox" name="furtividadehobbit" value="furtividadehobbit">Furtividade Hobbit</label>
-                </fieldset><br><br>
+        <fieldset>
 
-                 <label for="Niveldecoragem">Nivel de Coragem (1 a 10)</label>
-                <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
+            <legend>Qual é a sua raça?</legend>
 
-            
+            <input type="radio" name="raca"> Humano
 
-             <label for="Telefone">Telefone</label>
-             <input type="tel" name="telefone" id="telefone"
-             placeholder="Informe seu telefone"><br><br>
+            <input type="radio" name="raca"> Elfo
+
+            <input type="radio" name="raca"> Anão
+
+            <input type="radio" name="raca"> Hobbit
+
+        </fieldset>
+
+        <br>
+
+        <label>Escolha seu filme favorito:</label>
+
+        <select>
+
+            <option>O Retorno do Rei</option>
+
+            <option>A Sociedade do Anel</option>
+
+            <option>As Duas Torres</option>
+
+        </select>
+
+        <br><br>
+
+
+
+        <!-- Local -->
+
+        <label>Escolha um local da Terra Média:</label>
+
+        <select>
+
+            <option>Gondor</option>
+
+            <option>Rohan</option>
+
+            <option>Mordor</option>
+
+            <option>Condado</option>
+
+        </select>
+
+        <br><br>
+
+
+
+        <!-- Habilidades -->
+
+        <fieldset>
+
+            <legend>Suas habilidades</legend>
+
+            <input type="checkbox"> Espada
+
+            <input type="checkbox"> Arco e flecha
+
+            <input type="checkbox"> Magia
+
+            <input type="checkbox"> Furtividade Hobbit
+        </fieldset>
+        <br>
+
+        <label>Nível de coragem (1 a 10):</label><br>
+        <input type="range" min="1" max="10"><br><br>
+        <label>Seu reino de origem:</label><br>
+        <input type="text"><br><br>
+        <label>Cor do seu manto:</label>
+        <input type="color"><br><br>
+        <label>Data da sua jornada:</label>
+        <input type="date"><br><br>
+        <label>Anexe uma relíquia:</label>
+        <input type="file"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+</body>
 
              <label for="Github">Informe seu Github</label>
              <input type="url" name="Github" id="Github"
