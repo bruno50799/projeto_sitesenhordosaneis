@@ -51,12 +51,23 @@
               
            
            <label for="Qual seu filme favortio">Qual seu Filme Favorito?</label>
-           <input type="text" id="busca_datalist" list="paises">
+           <input type="text" id="busca_datalist" list="filmes">
                 <datalist id="Qual seu filme favorito">
-                    <option>O retorno do Reis</option>
-                    <option>França</option>
-                    <option>França</option>
+                    <option>O retorno do Rei</option>
+                    <option></option>
+                    <option></option>
                 </datalist><br><br>
+            
+                 <fieldset>
+                    <legend>Suas Habilidades</legend>
+                    <label"><input type="checkbox" name="Espada" value="Espada">Espada</label>
+                    <label"><input type="checkbox" name="arcoeflecha" value="arcoeflecha">Arco e Flecha</label>
+                    <label"><input type="checkbox" name="magia" value="magia">Magia</label>
+                    <label"><input type="checkbox" name="furtividadehobbit" value="furtividadehobbit">Furtividade Hobbit</label>
+                </fieldset><br><br>
+
+                 <label for="Niveldecoragem">Nivel de Coragem (1 a 10)</label>
+                <input type="range" max="10" min="1" id="nivel" name="nivel"><br><br>
 
             
 
@@ -123,25 +134,15 @@
                 </optgroup>
             </select><br><br>
             
-                <fieldset>
-                    <legend>Desenvolvimento para internet</legend>
-                    <label"><input type="checkbox" name="php" value="php">PHP</label>
-                    <label"><input type="checkbox" name="html5" value="html5">HTML5</label>
-                    <label"><input type="checkbox" name="css" value="css">CSS</label>
-                    <label"><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
-                </fieldset><br><br>
-                <label for="nivel">Escolha o nivel</label>
-                <input type="range" max="10" min="1" id="nivel" name="nivel">
-
                <!--Datalist possiveis ganhadores da copa do mundo 26--> 
                 <input type="text" id="busca_datalist" list="paises">
                 <datalist id="paises">
-                    <option>Brasil</option>
-                    <option>França</option>
-                    <option>Argentina</option>
-                    <option>Alemanha</option>
-                    <option>Inglaterra</option>
-                    <option>Espanha</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
                 </datalist><br><br>
 
                 <audio controls muted autoplay loop>
